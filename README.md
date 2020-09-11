@@ -2,6 +2,7 @@ eslint-config-pretty-react
 
 In progress
 
+devDependencies
 "babel-eslint": "^10.1.0",
 "eslint-config-prettier": "^6.11.0",
 "eslint-import-resolver-webpack": "^0.12.2",
@@ -16,6 +17,10 @@ In progress
 "read-pkg-up": "^7.0.1",
 "semver": "^7.3.2",
 "webpack": "^4.44.1"
+@typescript-eslint/eslint-plugin
+typescript
+@typescript-eslint/parser
 },
 
+dependencies
 "eslint-find-rules": "^3.6.0",

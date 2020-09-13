@@ -7,6 +7,8 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    ecmaVersion: 6,
+    sourceType: 'module',
   },
   plugins: ['react', 'react-hooks'],
   settings: {
@@ -105,8 +107,8 @@ module.exports = {
     'react/jsx-sort-props': 'off',
     'react/jsx-space-before-closing': 'off',
     'react/jsx-tag-spacing': 'off',
-    'react/jsx-uses-react': 'warn',
-    'react/jsx-uses-vars': 'warn',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'off',
 
     // React Hooks rules

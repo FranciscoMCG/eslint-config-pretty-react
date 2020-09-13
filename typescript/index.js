@@ -3,6 +3,8 @@ module.exports = {
   extends: ['prettier/@typescript-eslint'],
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
     // '@typescript-eslint/adjacent-overload-signatures': 'error', //	Require that member overloads be consecutive	✔️
     // '@typescript-eslint/array-type': 'error', //	Requires using either T[] or Array<T> for arrays		🔧
     // '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭
@@ -100,7 +102,7 @@ module.exports = {
     // '@typescript-eslint/no-redeclare': 'error', //	Disallow variable redeclaration
     // '@typescript-eslint/no-shadow': 'error', //	Disallow variable declarations from shadowing variables declared in the outer scope
     // '@typescript-eslint/no-unused-expressions': 'error', //	Disallow unused expressions
-    '@typescript-eslint/no-unused-vars': 'error', //	Disallow unused variables	✔️
+    // '@typescript-eslint/no-unused-vars': 'error', //	Disallow unused variables	✔️
     // '@typescript-eslint/no-use-before-define': 'error', //	Disallow the use of variables before they are defined
     // '@typescript-eslint/no-useless-constructor': 'error', //	Disallow unnecessary constructors
     // '@typescript-eslint/quotes': 'error', //	Enforce the consistent use of either backticks, double, or single quotes		🔧

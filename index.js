@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './best-practices',
+    './generic',
     './jest',
     './jsx-a11y',
     './react',

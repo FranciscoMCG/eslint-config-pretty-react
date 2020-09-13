@@ -2,3 +2,5 @@ node_modules
 .gitignore
 .idea
 .vscode
+
+yarn-error.log

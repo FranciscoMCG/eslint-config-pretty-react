@@ -1,4 +1,12 @@
 module.exports = {
+  env: {
+    browser: true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   plugins: ['jsx-a11y'],
   rules: {
     'jsx-a11y/accessible-emoji': 'error',

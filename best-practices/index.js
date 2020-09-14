@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['../config.js'],
   rules: {
+    // Generic
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',

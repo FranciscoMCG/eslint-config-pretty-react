@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['../config.js', 'prettier'],
+  extends: ['../config.js'],
   rules: {
     'array-bracket-newline': ['error', 'consistent'],
     'array-bracket-spacing': ['error', 'never'],

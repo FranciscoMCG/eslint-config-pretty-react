@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error']
+    // TODO dig in
     // '@typescript-eslint/adjacent-overload-signatures': 'error', //	Require that member overloads be consecutive	✔️
     // '@typescript-eslint/array-type': 'error', //	Requires using either T[] or Array<T> for arrays		🔧
     // '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭

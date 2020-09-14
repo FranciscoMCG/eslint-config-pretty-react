@@ -1,11 +1,12 @@
 module.exports = {
   extends: [
-    './generic',
+    './best-practices',
     './jest',
+    './possible-errors',
     './jsx-a11y',
     './react',
-    './code-style',
-    './typescript',
+    './stylistic',
+    './typescript'
   ],
-  rules: {},
+  rules: {}
 };

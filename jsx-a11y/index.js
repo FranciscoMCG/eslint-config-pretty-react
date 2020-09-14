@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['../config.js'],
   plugins: ['jsx-a11y'],
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
@@ -26,8 +27,8 @@ module.exports = {
     'jsx-a11y/no-interactive-element-to-noninteractive-role': [
       'error',
       {
-        tr: ['none', 'presentation'],
-      },
+        tr: ['none', 'presentation']
+      }
     ],
     'jsx-a11y/no-noninteractive-element-interactions': [
       'error',
@@ -38,9 +39,9 @@ module.exports = {
           'onMouseUp',
           'onKeyPress',
           'onKeyDown',
-          'onKeyUp',
-        ],
-      },
+          'onKeyUp'
+        ]
+      }
     ],
     'jsx-a11y/no-noninteractive-element-to-interactive-role': [
       'error',
@@ -52,7 +53,7 @@ module.exports = {
           'radiogroup',
           'tablist',
           'tree',
-          'treegrid',
+          'treegrid'
         ],
         ol: [
           'listbox',
@@ -61,38 +62,25 @@ module.exports = {
           'radiogroup',
           'tablist',
           'tree',
-          'treegrid',
+          'treegrid'
         ],
         li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
         table: ['grid'],
-        td: ['gridcell'],
-      },
+        td: ['gridcell']
+      }
     ],
     'jsx-a11y/no-noninteractive-tabindex': [
       'error',
       {
         tags: [],
-        roles: ['tabpanel'],
-      },
+        roles: ['tabpanel']
+      }
     ],
     'jsx-a11y/no-onchange': 'error',
     'jsx-a11y/no-redundant-roles': 'error',
-    'jsx-a11y/no-noninteractive-element-interactions': [
-      'error',
-      {
-        handlers: [
-          'onClick',
-          'onMouseDown',
-          'onMouseUp',
-          'onKeyPress',
-          'onKeyDown',
-          'onKeyUp',
-        ],
-      },
-    ],
     'jsx-a11y/role-has-required-aria-props': 'error',
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/scope': 'error',
-    'jsx-a11y/tabindex-no-positive': 'error',
-  },
+    'jsx-a11y/tabindex-no-positive': 'error'
+  }
 };

@@ -1,10 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['prettier/@typescript-eslint'],
+  extends: ['../config.js', 'prettier/@typescript-eslint'],
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': ['error']
     // '@typescript-eslint/adjacent-overload-signatures': 'error', //	Require that member overloads be consecutive	✔️
     // '@typescript-eslint/array-type': 'error', //	Requires using either T[] or Array<T> for arrays		🔧
     // '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭
@@ -110,5 +110,5 @@ module.exports = {
     // '@typescript-eslint/return-await	Enforces': 'error', // consistent returning of awaited values		🔧	💭
     // '@typescript-eslint/semi': 'error', //	Require or disallow semicolons instead of ASI		🔧
     // '@typescript-eslint/space-before-function-paren': 'error', //	Enforces consistent spacing before function parenthesis		🔧
-  },
+  }
 };

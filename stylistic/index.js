@@ -79,7 +79,7 @@ module.exports = {
     'object-curly-newline': 'off', // TODO dig in
     'object-curly-spacing': 'off', // TODO dig in
     'object-property-newline': 'off', // TODO dig in
-    'one-var': ['error', { 'uninitialized': 'always', 'initialized': 'never' }],
+    'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'off',
     'operator-assignment': 'off',
     'operator-linebreak': 'off', // TODO dig in

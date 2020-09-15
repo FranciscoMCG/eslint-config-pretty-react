@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    './config.js',
     './best-practices',
     './es6',
     './import',

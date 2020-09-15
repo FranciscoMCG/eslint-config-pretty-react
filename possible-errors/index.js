@@ -7,7 +7,7 @@ module.exports = {
     'no-await-in-loop': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
-    'no-console': 'error',
+    'no-console': 'off',
     'no-constant-condition': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
@@ -19,7 +19,7 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'off',
-    'no-extra-parens': 'error',
+    'no-extra-parens': 'off',
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-import-assign': 'error',
@@ -29,7 +29,7 @@ module.exports = {
     'no-loss-of-precision': 'off',
     'no-misleading-character-class': 'off',
     'no-obj-calls': 'error',
-    'no-promise-executor-return': 'error',
+    // 'no-promise-executor-return': 'error', // only avaliable in ESLint > 7
     'no-prototype-builtins': 'off',
     'no-regex-spaces': 'error',
     'no-setter-return': 'error',
@@ -37,10 +37,10 @@ module.exports = {
     'no-template-curly-in-string': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
-    'no-unreachable-loop': 'error',
+    // 'no-unreachable-loop': 'error', // only avaliable in ESLint > 7
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
-    'no-useless-backreference': 'error',
+    // 'no-useless-backreference': 'error', // only avaliable in ESLint > 7
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'error'

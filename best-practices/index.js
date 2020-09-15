@@ -10,9 +10,9 @@ module.exports = {
     'consistent-return': 'error',
     'curly': ['error', 'multi-line'],
     'default-case': 'error',
-    'default-case-last': 'error',
+    // 'default-case-last': 'error', // only avaliable in ESLint > 7
     'default-param-last': 'off',
-    'dot-location': ['error', 'object'],
+    'dot-location': ['error', 'property'],
     'dot-notation': 'error',
     'eqeqeq': 'off',
     'grouped-accessor-pairs': 'off',
@@ -89,7 +89,7 @@ module.exports = {
     'strict': 'error',
 
     // Variables
-    'init-declarations': 'error',
+    'init-declarations': 'off',
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
@@ -99,6 +99,9 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': 'off',
-    'no-use-before-define': 'error'
+    'no-use-before-define': [
+      2,
+      { 'functions': false, 'classes': true, 'variables': true }
+    ]
   }
 };

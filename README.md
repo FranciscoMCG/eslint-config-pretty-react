@@ -17,3 +17,7 @@ React + TypeScript
 npm i --save-dev eslint eslint-config-pretty-react
 
 Jest + Testing Library + JestDom
+
+TS parser => tsconfig needs to be at same level as eslintrc or package.json
+
+TS 3.7

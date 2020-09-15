@@ -24,7 +24,7 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'off',
-    'no-empty-function': 'warn',
+    'no-empty-function': 'off',
     'no-empty-pattern': 'error',
     'no-eq-null': 'warn',
     'no-eval': 'error',

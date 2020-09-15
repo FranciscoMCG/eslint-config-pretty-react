@@ -1,116 +1,145 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: ['../config.js', 'prettier/@typescript-eslint'],
+  parserOptions: {
+    project: './tsconfig.json'
+  },
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/adjacent-overload-signatures': ['error'],
+    '@typescript-eslint/array-type': [
+      'error',
+      {
+        'default': 'array'
+      }
+    ],
+    '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': 'allow-with-description',
+        'ts-nocheck': 'allow-with-description',
+        'ts-check': 'allow-with-description'
+      }
+    ],
+    '@typescript-eslint/ban-tslint-comment': 'error',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        'extendDefaults': true
+      }
+    ],
+    '@typescript-eslint/class-literal-property-style': 'off',
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      {
+        'assertionStyle': 'as',
+        'objectLiteralTypeAssertions': 'never'
+      }
+    ],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { 'prefer': 'no-type-imports' }
+    ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/member-ordering': 'off',
+    '@typescript-eslint/method-signature-style': 'error',
+    '@typescript-eslint/naming-convention': 'off', //	It looks good (!) but needs some time to work on it
+    '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/no-confusing-non-null-assertion': 'error',
+    '@typescript-eslint/no-dynamic-delete': 'off',
+    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-explicit-any': 'error', // I know...
+    '@typescript-eslint/no-extra-non-null-assertion': 'error',
+    '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-for-in-array': 'error',
+    '@typescript-eslint/no-implicit-any-catch': 'off',
+    '@typescript-eslint/no-implied-eval': 'error',
+    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
+    '@typescript-eslint/no-misused-new': 'error',
+    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-namespace': 'error',
+    '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
+    '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-this-alias': 'error',
+    '@typescript-eslint/no-throw-literal': 'error',
+    '@typescript-eslint/no-type-alias': 'off',
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+    '@typescript-eslint/no-unnecessary-condition': 'off', // need to sort this with compilerOptions
+    '@typescript-eslint/no-unnecessary-qualifier': 'off',
+    '@typescript-eslint/no-unnecessary-type-arguments': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'error',
+    '@typescript-eslint/no-unsafe-member-access': 'error',
+    '@typescript-eslint/no-unsafe-return': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/prefer-as-const': 'off',
+    '@typescript-eslint/prefer-enum-initializers': 'off',
+    '@typescript-eslint/prefer-for-of': 'error',
+    '@typescript-eslint/prefer-function-type': 'off',
+    '@typescript-eslint/prefer-includes': 'error',
+    '@typescript-eslint/prefer-literal-enum-member': 'error',
+    '@typescript-eslint/prefer-namespace-keyword': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/prefer-readonly': 'off',
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+    '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+    '@typescript-eslint/prefer-regexp-exec': 'error',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
+    '@typescript-eslint/promise-function-async': 'error',
+    '@typescript-eslint/require-array-sort-compare': 'error',
+    '@typescript-eslint/restrict-plus-operands': 'error',
+    '@typescript-eslint/restrict-template-expressions': 'error',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/switch-exhaustiveness-check': 'off',
+    '@typescript-eslint/triple-slash-reference': 'error',
+    '@typescript-eslint/type-annotation-spacing': 'error',
+    '@typescript-eslint/typedef': 'off',
+    '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/unified-signatures': 'error',
+    // Extension rules
+    '@typescript-eslint/brace-style': 'off',
+    '@typescript-eslint/comma-spacing': 'off',
+    '@typescript-eslint/default-param-last': 'off',
+    '@typescript-eslint/dot-notation': 'error',
+    '@typescript-eslint/func-call-spacing': ['error', 'never'],
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/init-declarations': 'off',
+    '@typescript-eslint/keyword-spacing': ['error', { 'before': true }],
+    '@typescript-eslint/lines-between-class-members': 'off',
+    '@typescript-eslint/no-array-constructor': 'error',
+    '@typescript-eslint/no-dupe-class-members': 'error',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-extra-parens': 'error',
+    '@typescript-eslint/no-extra-semi': 'error',
+    '@typescript-eslint/no-invalid-this': 'error',
+    '@typescript-eslint/no-loop-func': 'error',
+    '@typescript-eslint/no-loss-of-precision': 'off',
+    '@typescript-eslint/no-magic-numbers': 'off',
+    '@typescript-eslint/no-redeclare': 'error',
+    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-unused-expressions': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [2, { 'args': 'none' }],
-    // TODO dig in
-    // '@typescript-eslint/adjacent-overload-signatures': 'error', //	Require that member overloads be consecutive	✔️
-    // '@typescript-eslint/array-type': 'error', //	Requires using either T[] or Array<T> for arrays		🔧
-    // '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭
-    // '@typescript-eslint/ban-ts-comment': 'error', //	Bans // @ts-<directive> comments from being used or requires descriptions after directive	✔️
-    // '@typescript-eslint/ban-tslint-comment': 'error', //	Bans // tslint:<rule-flag> comments from being used		🔧
-    // '@typescript-eslint/ban-types': 'error', //	Bans specific types from being used	✔️	🔧
-    // '@typescript-eslint/class-literal-property-style': 'error', //	Ensures that literals on classes are exposed in a consistent style		🔧
-    // '@typescript-eslint/consistent-type-assertions': 'error', //	Enforces consistent usage of type assertions
-    // '@typescript-eslint/consistent-type-definitions': 'error', //	Consistent with type definition either interface or type		🔧
-    // '@typescript-eslint/consistent-type-imports': 'error', //	Enforces consistent usage of type imports		🔧
-    // '@typescript-eslint/explicit-function-return-type': 'error', //	Require explicit return types on functions and class methods
-    // '@typescript-eslint/explicit-member-accessibility': 'error', //	Require explicit accessibility modifiers on class properties and methods		🔧
-    // '@typescript-eslint/explicit-module-boundary-types': 'error', //	Require explicit return and argument types on exported functions' and classes' public class methods	✔️
-    // '@typescript-eslint/member-delimiter-style': 'error', //	Require a specific member delimiter style for interfaces and type literals		🔧
-    // '@typescript-eslint/member-ordering': 'error', //	Require a consistent member declaration order
-    // '@typescript-eslint/method-signature-style': 'error', //	Enforces using a particular method signature syntax.		🔧
-    // '@typescript-eslint/naming-convention': 'error', //	Enforces naming conventions for everything across a codebase			💭
-    // '@typescript-eslint/no-base-to-string': 'error', //	Requires that .toString() is only called on objects which provide useful information when stringified			💭
-    // '@typescript-eslint/no-confusing-non-null-assertion': 'error', //	Disallow non-null assertion in locations that may be confusing		🔧
-    // '@typescript-eslint/no-dynamic-delete': 'error', //	Disallow the delete operator with computed key expressions		🔧
-    // '@typescript-eslint/no-empty-interface': 'error', //	Disallow the declaration of empty interfaces	✔️	🔧
-    // '@typescript-eslint/no-explicit-any': 'error', //	Disallow usage of the any type	✔️	🔧
-    // '@typescript-eslint/no-extra-non-null-assertion': 'error', //	Disallow extra non-null assertion	✔️	🔧
-    // '@typescript-eslint/no-extraneous-class': 'error', //	Forbids the use of classes as namespaces
-    // '@typescript-eslint/no-floating-promises': 'error', //	Requires Promise-like values to be handled appropriately	✔️		💭
-    // '@typescript-eslint/no-for-in-array': 'error', //	Disallow iterating over an array with a for-in loop	✔️		💭
-    // '@typescript-eslint/no-implicit-any-catch': 'error', //	Disallow usage of the implicit any type in catch clauses		🔧
-    // '@typescript-eslint/no-implied-eval': 'error', //	Disallow the use of eval()-like methods	✔️		💭
-    // '@typescript-eslint/no-inferrable-types': 'error', //	Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean	✔️	🔧
-    // '@typescript-eslint/no-invalid-void-type': 'error', //	Disallows usage of void type outside of generic or return types
-    // '@typescript-eslint/no-misused-new	Enforce': 'error', // valid definition of new and constructor	✔️
-    // '@typescript-eslint/no-misused-promises': 'error', //	Avoid using promises in places not designed to handle them	✔️		💭
-    // '@typescript-eslint/no-namespace': 'error', //	Disallow the use of custom TypeScript modules and namespaces	✔️
-    // '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', //	Disallows using a non-null assertion after an optional chain expression	✔️
-    // '@typescript-eslint/no-non-null-assertion': 'error', //	Disallows non-null assertions using the ! postfix operator	✔️
-    // '@typescript-eslint/no-parameter-properties': 'error', //	Disallow the use of parameter properties in class constructors
-    // '@typescript-eslint/no-require-imports': 'error', //	Disallows invocation of require()
-    // '@typescript-eslint/no-this-alias': 'error', //	Disallow aliasing this	✔️
-    // '@typescript-eslint/no-throw-literal': 'error', //	Disallow throwing literals as exceptions			💭
-    // '@typescript-eslint/no-type-alias': 'error', //	Disallow the use of type aliases
-    // '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', //	Flags unnecessary equality comparisons against boolean literals		🔧	💭
-    // '@typescript-eslint/no-unnecessary-condition': 'error', //	Prevents conditionals where the type is always truthy or always falsy		🔧	💭
-    // '@typescript-eslint/no-unnecessary-qualifier': 'error', //	Warns when a namespace qualifier is unnecessary		🔧	💭
-    // '@typescript-eslint/no-unnecessary-type-arguments': 'error', //	Enforces that type arguments will not be used if not required		🔧	💭
-    // '@typescript-eslint/no-unnecessary-type-assertion': 'error', //	Warns if a type assertion does not change the type of an expression	✔️	🔧	💭
-    // '@typescript-eslint/no-unsafe-assignment': 'error', //	Disallows assigning any to variables and properties	✔️		💭
-    // '@typescript-eslint/no-unsafe-call': 'error', //	Disallows calling an any type value	✔️		💭
-    // '@typescript-eslint/no-unsafe-member-access': 'error', //	Disallows member access on any typed variables	✔️		💭
-    // '@typescript-eslint/no-unsafe-return': 'error', //	Disallows returning any from a function	✔️		💭
-    // '@typescript-eslint/no-var-requires': 'error', //	Disallows the use of require statements except in import statements	✔️
-    // '@typescript-eslint/prefer-as-const': 'error', //	Prefer usage of as const over literal type	✔️	🔧
-    // '@typescript-eslint/prefer-enum-initializers': 'error', //	Prefer initializing each enums member value
-    // '@typescript-eslint/prefer-for-of': 'error', //	Prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated
-    // '@typescript-eslint/prefer-function-type': 'error', //	Use function types instead of interfaces with call signatures		🔧
-    // '@typescript-eslint/prefer-includes': 'error', //	Enforce includes method over indexOf method		🔧	💭
-    // '@typescript-eslint/prefer-literal-enum-member': 'error', //	Require that all enum members be literal values to prevent unintended enum member name shadow issues
-    // '@typescript-eslint/prefer-namespace-keyword': 'error', //	Require the use of the namespace keyword instead of the module keyword to declare custom TypeScript modules	✔️	🔧
-    // '@typescript-eslint/prefer-nullish-coalescing': 'error', //	Enforce the usage of the nullish coalescing operator instead of logical chaining			💭
-    // '@typescript-eslint/prefer-optional-chain': 'error', //	Prefer using concise optional chain expressions instead of chained logical ands
-    // '@typescript-eslint/prefer-readonly': 'error', //	Requires that private members are marked as readonly if they're never modified outside of the constructor		🔧	💭
-    // '@typescript-eslint/prefer-readonly-parameter-types': 'error', //	Requires that function parameters are typed as readonly to prevent accidental mutation of inputs			💭
-    // '@typescript-eslint/prefer-reduce-type-parameter': 'error', //	Prefer using type parameter when calling Array#reduce instead of casting		🔧	💭
-    // '@typescript-eslint/prefer-regexp-exec': 'error', //	Enforce that RegExp#exec is used instead of String#match if no global flag is provided	✔️		💭
-    // '@typescript-eslint/prefer-string-starts-ends-with': 'error', //	Enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings		🔧	💭
-    // '@typescript-eslint/prefer-ts-expect-error': 'error', //	Recommends using // @ts-expect-error over // @ts-ignore		🔧
-    // '@typescript-eslint/promise-function-async': 'error', //	Requires any function or method that returns a Promise to be marked async			💭
-    // '@typescript-eslint/require-array-sort-compare': 'error', //	Requires Array#sort calls to always provide a compareFunction			💭
-    // '@typescript-eslint/restrict-plus-operands': 'error', //	When adding two variables, operands must both be of type number or of type string	✔️		💭
-    // '@typescript-eslint/restrict-template-expressions': 'error', //	Enforce template literal expressions to be of string type	✔️		💭
-    // '@typescript-eslint/strict-boolean-expressions': 'error', //	Restricts the types allowed in boolean expressions			💭
-    // '@typescript-eslint/switch-exhaustiveness-check': 'error', //	Exhaustiveness checking in switch with union type			💭
-    // '@typescript-eslint/triple-slash-reference': 'error', //	Sets preference level for triple slash directives versus ES6-style import declarations	✔️
-    // '@typescript-eslint/type-annotation-spacing': 'error', //	Require consistent spacing around type annotations		🔧
-    // '@typescript-eslint/typedef': 'error', //	Requires type annotations to exist
-    // '@typescript-eslint/unbound-method': 'error', //	Enforces unbound methods are called with their expected scope	✔️		💭
-    // '@typescript-eslint/unified-signatures': 'error', //
-    // '@typescript-eslint/brace-style': 'error', //	Enforce consistent brace style for blocks		🔧
-    // '@typescript-eslint/comma-spacing': 'error', //	Enforces consistent spacing before and after commas		🔧
-    // '@typescript-eslint/default-param-last': 'error', //	Enforce default parameters to be last
-    // '@typescript-eslint/dot-notation': 'error', //	enforce dot notation whenever possible		🔧	💭
-    // '@typescript-eslint/func-call-spacing': 'error', //	Require or disallow spacing between function identifiers and their invocations		🔧
-    // '@typescript-eslint/indent': 'error', //	Enforce consistent indentation		🔧
-    // '@typescript-eslint/init-declarations': 'error', //	require or disallow initialization in variable declarations
-    // '@typescript-eslint/keyword-spacing': 'error', //	Enforce consistent spacing before and after keywords		🔧
-    // '@typescript-eslint/lines-between-class-members': 'error', //	Require or disallow an empty line between class members		🔧
-    // '@typescript-eslint/no-array-constructor': 'error', //	Disallow generic Array constructors	✔️	🔧
-    // '@typescript-eslint/no-dupe-class-members': 'error', //	Disallow duplicate class members
-    // '@typescript-eslint/no-empty-function': 'error', //	Disallow empty functions	✔️
-    // '@typescript-eslint/no-extra-parens': 'error', //	Disallow unnecessary parentheses		🔧
-    // '@typescript-eslint/no-extra-semi': 'error', //	Disallow unnecessary semicolons	✔️	🔧
-    // '@typescript-eslint/no-invalid-this': 'error', //	disallow this keywords outside of classes or class-like objects
-    // '@typescript-eslint/no-loop-func': 'error', //	Disallow function declarations that contain unsafe references inside loop statements
-    // '@typescript-eslint/no-loss-of-precision': 'error', //	Disallow literal numbers that lose precision
-    // '@typescript-eslint/no-magic-numbers': 'error', //	Disallow magic numbers
-    // '@typescript-eslint/no-redeclare': 'error', //	Disallow variable redeclaration
-    // '@typescript-eslint/no-shadow': 'error', //	Disallow variable declarations from shadowing variables declared in the outer scope
-    // '@typescript-eslint/no-unused-expressions': 'error', //	Disallow unused expressions
-    // '@typescript-eslint/no-unused-vars': 'error', //	Disallow unused variables	✔️
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error' //	Disallow the use of variables before they are defined
-    // '@typescript-eslint/no-useless-constructor': 'error', //	Disallow unnecessary constructors
-    // '@typescript-eslint/quotes': 'error', //	Enforce the consistent use of either backticks, double, or single quotes		🔧
-    // '@typescript-eslint/require-await': 'error', //	Disallow async functions which have no await expression	✔️		💭
-    // '@typescript-eslint/return-await	Enforces': 'error', // consistent returning of awaited values		🔧	💭
-    // '@typescript-eslint/semi': 'error', //	Require or disallow semicolons instead of ASI		🔧
-    // '@typescript-eslint/space-before-function-paren': 'error', //	Enforces consistent spacing before function parenthesis		🔧
+    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/quotes': 'off',
+    '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/return-await': 'error',
+    '@typescript-eslint/semi': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off'
   }
 };

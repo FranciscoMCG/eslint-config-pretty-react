@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-pretty-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint configuration for React projects",
   "main": "index.js",
   "scripts": {
     "prettier": "prettier --check '**/*.{js,ts}'",
     "prettier:format": "prettier --write '**/*.{js,ts}'",
-    "lint": "eslint '**/*.{js,ts}' --quiet",
+    "lint": "eslint '**/*.{js,ts}'",
     "lint:fix": "eslint '**/*.{js,ts}' --quiet --fix",
     "pre-commit": "yarn lint:fix && yarn prettier:format"
   },

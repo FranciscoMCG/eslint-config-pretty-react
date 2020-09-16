@@ -22,6 +22,7 @@
 - [About the project](#about-the-project)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [TypeScript](#typescript)
 - [Packages](#packages)
   - [Libraries](#libraries)
   - [Packs](#packs)
@@ -69,6 +70,23 @@ Create a `.eslintrc` and add the package to the extends key:
 ```
 
 This makes use of the whole `pretty-react` package (including [TypeScript][typescript-lang]), but the project it's split in a few [packs](#packs) that will (most likely) make your life easier.
+
+### TypeScript
+
+If you're using [TypeScript][typescript-lang] you must also install the following:
+
+```sh
+npm i --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+or
+
+```sh
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+These packages will ensure your [TypeScript][typescript-lang] code is parsed correctly.
+
 
 ---
 

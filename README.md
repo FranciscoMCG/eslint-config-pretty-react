@@ -78,15 +78,15 @@ This makes use of the whole `pretty-react` package (including TypeScript), but t
 
 This project contains a set of libraries that add some linting rules:
 
-- [ESLint](#eslint)
-- [eslint-plugin-react](#eslint-plugin-react)
-- [eslint-plugin-react-hooks](#eslint-plugin-react-hooks)
-- [eslint-plugin-jsx-a11y](#eslint-plugin-jsx-a11y)
-- [eslint-plugin-jest](#eslint-plugin-jest)
-- [eslint-plugin-jest-dom](#eslint-plugin-jest-dom)
-- [eslint-plugin-testing-library](#eslint-plugin-testing-library)
-- [eslint-plugin-prettier](#eslint-plugin-prettier) (we are not using any rules but you can. It's being used to be able to support Prettier with React and TypeScript)
-- [@typescript-eslint/eslint-plugin](#@typescript-eslint/eslint-plugin)
+- [ESLint](eslint)
+- [eslint-plugin-react](eslint-plugin-react)
+- [eslint-plugin-react-hooks](eslint-plugin-react-hooks)
+- [eslint-plugin-jsx-a11y](eslint-plugin-jsx-a11y)
+- [eslint-plugin-jest](eslint-plugin-jest)
+- [eslint-plugin-jest-dom](eslint-plugin-jest-dom)
+- [eslint-plugin-testing-library](eslint-plugin-testing-library)
+- [eslint-plugin-prettier](eslint-plugin-prettier) (we are not using any rules but you can. It's being used to be able to support Prettier with React and TypeScript)
+- [@typescript-eslint/eslint-plugin](@typescript-eslint/eslint-plugin)
 
 You can use the entire package with:
 
@@ -100,16 +100,16 @@ But, if you prefer, you can also use the following individual configs:
 "extends": ["pretty-react/<config-name>"]
 ```
 
-- [best-practices](#best-practices)
-- [es6](#es6)
-- [possible-errors](#possible-errors)
-- [stylistic](#stylistic)
-- [jsx-a11y](#jsx-a11y)
-- [jest](#jest)
-- [jest-dom](#jest-dom)
-- [testing-library](#testing-library)
-- [react](#react)
-- [typescript](#typescript)
+- [best-practices](best-practices)
+- [es6](es6)
+- [possible-errors](possible-errors)
+- [stylistic](stylistic)
+- [jsx-a11y](jsx-a11y)
+- [jest](jest)
+- [jest-dom](jest-dom)
+- [testing-library](testing-library)
+- [react](react)
+- [typescript](typescript)
 
 ### Packs
 
@@ -121,12 +121,12 @@ For your convenience the following packs have been created:
 
 **I'm using React with vanilla JavaScript**
 
-- [jsx](#jsx)
-  - [best-practices](#best-practices)
-  - [es6](#es6)
-  - [possible-errors](#possible-errors)
-  - [stylistic](#stylistic)
-  - [react](#react)
+- [jsx](jsx)
+  - [best-practices](best-practices)
+  - [es6](es6)
+  - [possible-errors](possible-errors)
+  - [stylistic](stylistic)
+  - [react](react)
 
 ```json
 "extends": ["pretty-react/packs/jsx"]
@@ -134,13 +134,13 @@ For your convenience the following packs have been created:
 
 **I'm using React with TypeScript**
 
-- [tsx](#tsx)
-  - [best-practices](#best-practices)
-  - [es6](#es6)
-  - [possible-errors](#possible-errors)
-  - [stylistic](#stylistic)
-  - [react](#react)
-  - [typescript](#typescript)
+- [tsx](tsx)
+  - [best-practices](best-practices)
+  - [es6](es6)
+  - [possible-errors](possible-errors)
+  - [stylistic](stylistic)
+  - [react](react)
+  - [typescript](typescript)
 
 ```json
 "extends": ["pretty-react/packs/tsx"]
@@ -148,10 +148,10 @@ For your convenience the following packs have been created:
 
 **I'm using Jest with Testing-Library**
 
-- [testing-library](#testing-library-pack)
-  - [jest](#jest)
-  - [jest-dom](#jest-dom)
-  - [testing-library](#testing-library)
+- [testing-library](testing-library-pack)
+  - [jest](jest)
+  - [jest-dom](jest-dom)
+  - [testing-library](testing-library)
 
 ```json
 "extends": ["pretty-react/packs/testing-library"]
@@ -161,7 +161,7 @@ For your convenience the following packs have been created:
 
 ## Roadmap
 
-See the [open issues](#issues) for a list of proposed features (and known issues).
+See the [open issues](issues) for a list of proposed features (and known issues).
 
 ---
 

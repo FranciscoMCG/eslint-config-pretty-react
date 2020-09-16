@@ -1,38 +1,16 @@
 <div align="center">
 
-# eslint-config-pretty-react
-
-<font size="10">💄</font>
-
-<br />
+# eslint-config-pretty-react 💄
 
 ## (Almost) Zero config ESLint rules for JavaScript / React projects
 
 </div>
-
----
 
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
 [![PRs Welcome][prs-badge]][prs]
-
-Requires ESLint >= 7
-
-React
-
-npm i --save-dev eslint eslint-config-pretty-react
-
-React + TypeScript
-
-npm i --save-dev eslint eslint-config-pretty-react
-
-Jest + Testing Library + JestDom
-
-TS parser => tsconfig needs to be at same level as eslintrc or package.json
-
-TS 3.7
 
 <!-- PROJECT LOGO -->
 <br />
@@ -55,9 +33,9 @@ TS 3.7
 
 We all have been (probably) in charge of some new project configuration. And, if we care about code patterns, linting crossed our minds already.
 
-ESLint is the go to option when it comes to JavaScript projects and, I've got to say, configuring the hundreds (or maybe thousands 🤔) of rules can be a daunting task.
+ESLint is the go to option when it comes to JavaScript projects and, I've got to say, configuring the hundreds (or maybe thousands 🤔) of rules can be a daunting task🤯.
 
-This is a repository containing some ESLint plugins and rules that I personally like.
+This is a repository containing some ESLint plugins and rules that I personally like👌.
 
 ---
 
@@ -175,7 +153,7 @@ See the [open issues](#issues) for a list of proposed features (and known issues
 
 ## Contributing
 
-Found a bug? A typo? Didn't like that extra white space? Contributions are **highly appreciated**!
+Found a bug? A typo? Didn't like that extra white space? Contributions are **highly appreciated** 🙌!
 
 1. Fork the Project
 2. Create your Branch (`git checkout -b feature`)

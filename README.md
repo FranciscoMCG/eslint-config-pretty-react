@@ -119,28 +119,42 @@ For your convenience the following packs have been created:
 "extends": ["pretty-react/packs/<packs-name>"]
 ```
 
-**I am using React with vanilla JavaScript**
+**I'm using React with vanilla JavaScript**
 
 - [jsx](#jsx)
+  - [best-practices](#best-practices)
+  - [es6](#es6)
+  - [possible-errors](#possible-errors)
+  - [stylistic](#stylistic)
+  - [react](#react)
 
 ```json
-"extends": ["pretty-react/packs/<jsx>"]
+"extends": ["pretty-react/packs/jsx"]
 ```
 
-**I am using React with TypeScript**
+**I'm using React with TypeScript**
 
 - [tsx](#tsx)
+  - [best-practices](#best-practices)
+  - [es6](#es6)
+  - [possible-errors](#possible-errors)
+  - [stylistic](#stylistic)
+  - [react](#react)
+  - [typescript](#typescript)
 
 ```json
-"extends": ["pretty-react/packs/<tsx>"]
+"extends": ["pretty-react/packs/tsx"]
 ```
 
-**I am using Jest with Testing-Library**
+**I'm using Jest with Testing-Library**
 
-- [testing-library](#testing-library)
+- [testing-library](#testing-library-pack)
+  - [jest](#jest)
+  - [jest-dom](#jest-dom)
+  - [testing-library](#testing-library)
 
 ```json
-"extends": ["pretty-react/packs/<testing-library>"]
+"extends": ["pretty-react/packs/testing-library"]
 ```
 
 ---

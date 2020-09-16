@@ -68,7 +68,7 @@ Create a `.eslintrc` and add the package to the extends key:
 }
 ```
 
-This makes use of the whole `pretty-react` package, but the project it's split in a few [packs](#packs) that will (most likely) make your life easier.
+This makes use of the whole `pretty-react` package (including TypeScript), but the project it's split in a few [packs](#packs) that will (most likely) make your life easier.
 
 ---
 

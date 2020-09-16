@@ -76,7 +76,7 @@ module.exports = {
       'warn',
       { props: 'never', children: 'ignore' }
     ],
-    'react/jsx-curly-newline': 'warn',
+    'react/jsx-curly-newline': 'off',
     'react/jsx-curly-spacing': 'warn',
     'react/jsx-equals-spacing': 'warn',
     'react/jsx-filename-extension': 'off',

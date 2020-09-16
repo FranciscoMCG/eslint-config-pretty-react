@@ -23,7 +23,7 @@ module.exports = {
     'id-denylist': 'off',
     'id-length': 'off',
     'id-match': ['error', '^\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\$?$'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    'implicit-arrow-linebreak': 'off',
     'indent': 'off',
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': [

@@ -59,7 +59,7 @@ yarn add -D eslint-config-pretty-react
 
 Create a `.eslintrc` and add the package to the extends key:
 
-```json
+```javascript
 {
   "extends": ["pretty-react"],
   "rules": {

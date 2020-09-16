@@ -6,7 +6,7 @@ module.exports = {
     '../../possible-errors',
     '../../react',
     '../../stylistic',
-    '../../typescript'
+    '../../typescript',
   ],
-  rules: {}
+  rules: {},
 };

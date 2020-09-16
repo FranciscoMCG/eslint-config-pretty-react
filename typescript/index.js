@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: ['../config.js', 'prettier/@typescript-eslint'],
   parserOptions: {
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: ['@typescript-eslint'],
   rules: {
@@ -10,8 +10,8 @@ module.exports = {
     '@typescript-eslint/array-type': [
       'error',
       {
-        'default': 'array'
-      }
+        'default': 'array',
+      },
     ],
     '@typescript-eslint/await-thenable': 'error', //	Disallows awaiting a value that is not a Thenable	✔️		💭
     '@typescript-eslint/ban-ts-comment': [
@@ -20,28 +20,28 @@ module.exports = {
         'ts-expect-error': 'allow-with-description',
         'ts-ignore': 'allow-with-description',
         'ts-nocheck': 'allow-with-description',
-        'ts-check': 'allow-with-description'
-      }
+        'ts-check': 'allow-with-description',
+      },
     ],
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/ban-types': [
       'error',
       {
-        'extendDefaults': true
-      }
+        'extendDefaults': true,
+      },
     ],
     '@typescript-eslint/class-literal-property-style': 'off',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
         'assertionStyle': 'as',
-        'objectLiteralTypeAssertions': 'never'
-      }
+        'objectLiteralTypeAssertions': 'never',
+      },
     ],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { 'prefer': 'no-type-imports' }
+      { 'prefer': 'no-type-imports' },
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
@@ -140,6 +140,6 @@ module.exports = {
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/semi': 'off',
-    '@typescript-eslint/space-before-function-paren': 'off'
-  }
+    '@typescript-eslint/space-before-function-paren': 'off',
+  },
 };

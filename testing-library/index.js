@@ -16,6 +16,6 @@ module.exports = {
     'testing-library/prefer-find-by': 'error',
     'testing-library/prefer-presence-queries': 'error',
     'testing-library/prefer-screen-queries': 'error',
-    'testing-library/prefer-wait-for': 'error'
-  }
+    'testing-library/prefer-wait-for': 'error',
+  },
 };

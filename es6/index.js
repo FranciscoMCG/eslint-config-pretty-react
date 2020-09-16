@@ -32,6 +32,6 @@ module.exports = {
     'sort-imports': 'off',
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
-    'yield-star-spacing': 'off'
-  }
+    'yield-star-spacing': 'off',
+  },
 };

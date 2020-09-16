@@ -11,7 +11,7 @@ module.exports = {
     './react',
     './stylistic',
     './testing-library',
-    './typescript'
+    './typescript',
   ],
-  rules: {}
+  rules: {},
 };

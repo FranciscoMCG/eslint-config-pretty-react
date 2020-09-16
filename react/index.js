@@ -2,16 +2,16 @@ module.exports = {
   extends: ['../config.js', 'prettier/react'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['react', 'react-hooks'],
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   rules: {
     // React rules
@@ -74,7 +74,7 @@ module.exports = {
     'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
-      { props: 'never', children: 'ignore' }
+      { props: 'never', children: 'ignore' },
     ],
     'react/jsx-curly-newline': 'off',
     'react/jsx-curly-spacing': 'warn',
@@ -110,6 +110,6 @@ module.exports = {
 
     // React Hooks rules
     'react-hooks/exhaustive-deps': 'warn',
-    'react-hooks/rules-of-hooks': 'error'
-  }
+    'react-hooks/rules-of-hooks': 'error',
+  },
 };

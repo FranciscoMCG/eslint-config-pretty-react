@@ -8,7 +8,7 @@ module.exports = {
     'brace-style': 'off',
     'camelcase': ['error', { 'properties': 'always' }],
     'capitalized-comments': 'off',
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': 'off',
     'comma-style': ['error', 'last'],
     'computed-property-spacing': ['error', 'never'],
@@ -28,7 +28,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': [
       'error',
-      { 'beforeColon': false, 'afterColon': true, 'mode': 'strict' }
+      { 'beforeColon': false, 'afterColon': true, 'mode': 'strict' },
     ],
     'keyword-spacing': ['error', { 'before': true }],
     'line-comment-position': 'off',
@@ -39,7 +39,7 @@ module.exports = {
     'max-len': 'off',
     'max-lines': [
       'error',
-      { 'max': 2500, 'skipBlankLines': false, 'skipComments': false }
+      { 'max': 2500, 'skipBlankLines': false, 'skipComments': false },
     ],
     'max-lines-per-function': ['error', 150],
     'max-nested-callbacks': ['error', 7],
@@ -74,7 +74,7 @@ module.exports = {
     'nonblock-statement-body-position': [
       'error',
       'beside',
-      { 'overrides': { 'while': 'below' } }
+      { 'overrides': { 'while': 'below' } },
     ],
     'object-curly-newline': 'off', // TODO dig in
     'object-curly-spacing': 'off', // TODO dig in
@@ -101,6 +101,6 @@ module.exports = {
     'switch-colon-spacing': 'off',
     'template-tag-spacing': 'off',
     'unicode-bom': 'off',
-    'wrap-regex': 'error'
-  }
+    'wrap-regex': 'error',
+  },
 };

@@ -87,7 +87,6 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 These packages will ensure your [TypeScript][typescript-lang] code is parsed correctly.
 
-
 ---
 
 ## Packages

@@ -5,7 +5,7 @@ module.exports = {
     '../../import',
     '../../possible-errors',
     '../../react',
-    '../../stylistic'
+    '../../stylistic',
   ],
-  rules: {}
+  rules: {},
 };

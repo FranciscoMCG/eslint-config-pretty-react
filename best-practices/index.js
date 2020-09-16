@@ -72,7 +72,7 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': [
       'error',
-      { 'terms': ['fixme'], 'location': 'anywhere' }
+      { 'terms': ['fixme'], 'location': 'anywhere' },
     ],
     'no-with': 'off',
     'prefer-named-capture-group': 'off',
@@ -101,7 +101,7 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-use-before-define': [
       2,
-      { 'functions': false, 'classes': true, 'variables': true }
-    ]
-  }
+      { 'functions': false, 'classes': true, 'variables': true },
+    ],
+  },
 };

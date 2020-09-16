@@ -43,6 +43,6 @@ module.exports = {
     // 'no-useless-backreference': 'error', // only avaliable in ESLint > 7
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
-    'valid-typeof': 'error'
-  }
+    'valid-typeof': 'error',
+  },
 };

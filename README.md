@@ -2,7 +2,7 @@
 
 # eslint-config-pretty-react 💄
 
-## (Almost) Zero config ESLint rules for JavaScript / React projects
+## (Almost) Zero config [ESLint][eslint] rules for JavaScript / [React][reactjs] projects
 
 </div>
 
@@ -33,9 +33,9 @@
 
 We all have been (probably) in charge of some new project configuration. And, if we care about code patterns, linting crossed our minds already.
 
-ESLint is the go to option when it comes to JavaScript projects and, I've got to say, configuring the hundreds (or maybe thousands 🤔) of rules can be a daunting task🤯.
+[ESLint][eslint] is the go to option when it comes to JavaScript projects and, I've got to say, configuring the hundreds (or maybe thousands 🤔) of rules can be a daunting task🤯.
 
-This is a repository containing some ESLint plugins and rules that I personally like👌.
+This is a repository containing some [ESLint][eslint] plugins and rules that I personally like👌.
 
 ---
 
@@ -68,7 +68,7 @@ Create a `.eslintrc` and add the package to the extends key:
 }
 ```
 
-This makes use of the whole `pretty-react` package (including TypeScript), but the project it's split in a few [packs](#packs) that will (most likely) make your life easier.
+This makes use of the whole `pretty-react` package (including [TypeScript][typescript-lang]), but the project it's split in a few [packs](#packs) that will (most likely) make your life easier.
 
 ---
 
@@ -78,15 +78,15 @@ This makes use of the whole `pretty-react` package (including TypeScript), but t
 
 This project contains a set of libraries that add some linting rules:
 
-- [ESLint](eslint)
-- [eslint-plugin-react](eslint-plugin-react)
-- [eslint-plugin-react-hooks](eslint-plugin-react-hooks)
-- [eslint-plugin-jsx-a11y](eslint-plugin-jsx-a11y)
-- [eslint-plugin-jest](eslint-plugin-jest)
-- [eslint-plugin-jest-dom](eslint-plugin-jest-dom)
-- [eslint-plugin-testing-library](eslint-plugin-testing-library)
-- [eslint-plugin-prettier](eslint-plugin-prettier) (we are not using any rules but you can. It's being used to be able to support Prettier with React and TypeScript)
-- [@typescript-eslint/eslint-plugin](@typescript-eslint/eslint-plugin)
+- [ESLint][eslint]
+- [eslint-plugin-react][eslint-plugin-react]
+- [eslint-plugin-react-hooks][eslint-plugin-react-hooks]
+- [eslint-plugin-jsx-a11y][eslint-plugin-jsx-a11y]
+- [eslint-plugin-jest][eslint-plugin-jest]
+- [eslint-plugin-jest-dom][eslint-plugin-jest-dom]
+- [eslint-plugin-testing-library][eslint-plugin-testing-library]
+- [eslint-plugin-prettier][eslint-plugin-prettier] (we are not using any rules but you can. It's being used to be able to support [Prettier][prettier] with [React][reactjs] and [TypeScript][typescript-lang])
+- [@typescript-eslint/eslint-plugin][@typescript-eslint/eslint-plugin]
 
 You can use the entire package with:
 
@@ -217,3 +217,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [jsx]: https://github.com/FranciscoMCG/eslint-config-pretty-react/blob/master/packs/jsx/index.js
 [tsx]: https://github.com/FranciscoMCG/eslint-config-pretty-react/blob/master/packs/tsx/index.js
 [testing-library-pack]: https://github.com/FranciscoMCG/eslint-config-pretty-react/blob/master/packs/testing-library/index.js
+[typescript-lang]: https://www.typescriptlang.org/
+[reactjs]: http://reactjs.org/
+[prettier]: https://prettier.io/

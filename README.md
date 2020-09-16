@@ -161,13 +161,13 @@ For your convenience the following packs have been created:
 
 ## Roadmap
 
-See the [open issues](issues) for a list of proposed features (and known issues).
+See the [open issues][issues] for a list of proposed features (and known issues).
 
 ---
 
 ## Contributing
 
-Found a bug? A typo? Didn't like that extra white space? Contributions are **highly appreciated** 🙌!
+Found a [bug][bugs]🐛? A typo? Didn't like that extra white space? Contributions are **highly appreciated** 🙌!
 
 1. Fork the Project
 2. Create your Branch (`git checkout -b feature`)
@@ -179,7 +179,7 @@ Found a bug? A typo? Didn't like that extra white space? Contributions are **hig
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE][license] for more information.
 
 <!-- LINKS -->
 
@@ -220,3 +220,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [typescript-lang]: https://www.typescriptlang.org/
 [reactjs]: http://reactjs.org/
 [prettier]: https://prettier.io/
+[license]: https://github.com/FranciscoMCG/eslint-config-pretty-react/blob/master/LICENSE

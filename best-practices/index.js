@@ -95,7 +95,7 @@ module.exports = {
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-undef': 'error',
+    'no-undef': 'off',
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': 'off',

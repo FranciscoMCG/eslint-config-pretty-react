@@ -6,7 +6,7 @@ module.exports = {
     'array-element-newline': 'off',
     'block-spacing': 'off',
     'brace-style': 'off',
-    'camelcase': ['error', { 'properties': 'always' }],
+    'camelcase': 'off',
     'capitalized-comments': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': 'off',

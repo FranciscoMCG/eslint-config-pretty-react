@@ -138,7 +138,7 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/quotes': 'off',
     '@typescript-eslint/require-await': 'error',
-    '@typescript-eslint/return-await': 'error',
+    '@typescript-eslint/return-await': 'off',
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
   },

@@ -59,7 +59,7 @@ module.exports = {
     'react/require-default-props': 'ofF',
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'warn',
+    'react/self-closing-comp': 'off',
     'react/sort-comp': 'off',
     'react/sort-prop-types': 'warn',
     'react/state-in-constructor': 'off',

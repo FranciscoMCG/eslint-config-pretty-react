@@ -8,7 +8,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'complexity': ['error', 14],
     'consistent-return': 'error',
-    'curly': ['error', 'multi-line'],
+    'curly': 'off',
     'default-case': 'error',
     // 'default-case-last': 'error', // only avaliable in ESLint > 7
     'default-param-last': 'off',
@@ -55,7 +55,7 @@ module.exports = {
     'no-redeclare': 'error',
     'no-restricted-properties': 'off',
     'no-return-assign': 'error',
-    'no-return-await': 'error',
+    'no-return-await': 'off',
     'no-script-url': 'error',
     'no-self-assign': 'error',
     'no-self-compare': 'error',

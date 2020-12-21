@@ -93,7 +93,7 @@ module.exports = {
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
-    'no-shadow': 'error',
+    'no-shadow': 'off',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'off',
     'no-undef-init': 'error',

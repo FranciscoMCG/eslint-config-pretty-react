@@ -56,7 +56,7 @@ module.exports = {
     'no-continue': 'error',
     'no-inline-comments': 'off',
     'no-lonely-if': 'error',
-    'no-mixed-operators': 'error',
+    'no-mixed-operators': 'off',
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-assign': 'error',
     'no-multiple-empty-lines': ['error', { 'max': 2, 'maxEOF': 0 }],
@@ -71,11 +71,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'nonblock-statement-body-position': [
-      'error',
-      'beside',
-      { 'overrides': { 'while': 'below' } },
-    ],
+    'nonblock-statement-body-position': 'off',
     'object-curly-newline': 'off', // TODO dig in
     'object-curly-spacing': 'off', // TODO dig in
     'object-property-newline': 'off', // TODO dig in

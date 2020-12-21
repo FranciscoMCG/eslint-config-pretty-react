@@ -7,7 +7,7 @@ module.exports = {
     'testing-library/await-fire-event': 'off',
     'testing-library/consistent-data-testid': 'off',
     'testing-library/no-await-sync-query': 'error',
-    'testing-library/no-debug': 'error',
+    'testing-library/no-debug': 'off',
     'testing-library/no-dom-import': ['error', 'react'],
     'testing-library/no-manual-cleanup': 'error',
     'testing-library/no-render-in-setup': 'off',
